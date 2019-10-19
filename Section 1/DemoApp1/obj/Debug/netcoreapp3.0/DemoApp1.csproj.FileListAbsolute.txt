@@ -1,0 +1,10 @@
+C:\work\github\Parallel Programming\Section 1\DemoApp1\bin\Debug\netcoreapp3.0\DemoApp1.exe
+C:\work\github\Parallel Programming\Section 1\DemoApp1\bin\Debug\netcoreapp3.0\DemoApp1.deps.json
+C:\work\github\Parallel Programming\Section 1\DemoApp1\bin\Debug\netcoreapp3.0\DemoApp1.runtimeconfig.json
+C:\work\github\Parallel Programming\Section 1\DemoApp1\bin\Debug\netcoreapp3.0\DemoApp1.runtimeconfig.dev.json
+C:\work\github\Parallel Programming\Section 1\DemoApp1\bin\Debug\netcoreapp3.0\DemoApp1.dll
+C:\work\github\Parallel Programming\Section 1\DemoApp1\bin\Debug\netcoreapp3.0\DemoApp1.pdb
+C:\work\github\Parallel Programming\Section 1\DemoApp1\obj\Debug\netcoreapp3.0\DemoApp1.AssemblyInfoInputs.cache
+C:\work\github\Parallel Programming\Section 1\DemoApp1\obj\Debug\netcoreapp3.0\DemoApp1.AssemblyInfo.cs
+C:\work\github\Parallel Programming\Section 1\DemoApp1\obj\Debug\netcoreapp3.0\DemoApp1.dll
+C:\work\github\Parallel Programming\Section 1\DemoApp1\obj\Debug\netcoreapp3.0\DemoApp1.pdb
