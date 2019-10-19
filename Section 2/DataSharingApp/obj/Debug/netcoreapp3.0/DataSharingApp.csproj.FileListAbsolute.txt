@@ -1,0 +1,10 @@
+C:\work\github\Parallel Programming\Section 2\DataSharingApp\bin\Debug\netcoreapp3.0\DataSharingApp.exe
+C:\work\github\Parallel Programming\Section 2\DataSharingApp\bin\Debug\netcoreapp3.0\DataSharingApp.deps.json
+C:\work\github\Parallel Programming\Section 2\DataSharingApp\bin\Debug\netcoreapp3.0\DataSharingApp.runtimeconfig.json
+C:\work\github\Parallel Programming\Section 2\DataSharingApp\bin\Debug\netcoreapp3.0\DataSharingApp.runtimeconfig.dev.json
+C:\work\github\Parallel Programming\Section 2\DataSharingApp\bin\Debug\netcoreapp3.0\DataSharingApp.dll
+C:\work\github\Parallel Programming\Section 2\DataSharingApp\bin\Debug\netcoreapp3.0\DataSharingApp.pdb
+C:\work\github\Parallel Programming\Section 2\DataSharingApp\obj\Debug\netcoreapp3.0\DataSharingApp.AssemblyInfoInputs.cache
+C:\work\github\Parallel Programming\Section 2\DataSharingApp\obj\Debug\netcoreapp3.0\DataSharingApp.AssemblyInfo.cs
+C:\work\github\Parallel Programming\Section 2\DataSharingApp\obj\Debug\netcoreapp3.0\DataSharingApp.dll
+C:\work\github\Parallel Programming\Section 2\DataSharingApp\obj\Debug\netcoreapp3.0\DataSharingApp.pdb
