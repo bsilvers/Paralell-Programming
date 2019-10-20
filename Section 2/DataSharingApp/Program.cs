@@ -3,6 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 
+
 namespace DataSharingApp
 {
     class BankAccount
@@ -296,7 +297,59 @@ namespace DataSharingApp
         #endregion
 
         #region Reader-Writer Locks
+        static ReaderWriterLockSlim padLock = new ReaderWriterLockSlim(LockRecursionPolicy.SupportsRecursion);
+        static void ReaderWriterLock()
+        {
+            int x = 0;
 
+            var tasks = new List<Task>();
+            for (int i = 0; i < 10; i++)
+            {
+                tasks.Add(Task.Factory.StartNew(() => {
+                    // padLock.EnterReadLock();
+                    padLock.EnterUpgradeableReadLock();
+
+                    if(i%2 ==0)
+                    {
+                        padLock.EnterWriteLock();
+                        x = 123;
+                        padLock.ExitWriteLock();
+                    }
+
+                    Console.WriteLine($"Entered read lock, x = {x}");
+                    Thread.Sleep(5000);
+                    //padLock.ExitReadLock();
+                    padLock.ExitUpgradeableReadLock();
+
+                    Console.WriteLine($"Exited read lock, x = {x}.");
+                }));
+            }
+
+            try
+            {
+                Task.WaitAll(tasks.ToArray());
+            }
+            catch (AggregateException ae)
+            {
+                ae.Handle(e => {
+                    Console.WriteLine(e);
+                    return true;
+                });                  
+            }
+
+            Random random = new Random();
+            while (true)
+            {
+                Console.ReadKey();
+                padLock.EnterWriteLock();
+                Console.WriteLine("Write lock acquired");
+                int newValue = random.Next(10);
+                x = newValue;
+                Console.WriteLine($"Set x = {x}");
+                padLock.ExitWriteLock();
+                Console.WriteLine("Write lock has been released");
+            }
+        }
         #endregion
         static void Main(string[] args)
         {
@@ -305,8 +358,8 @@ namespace DataSharingApp
             //  LockRecursion(5);
             // MutexExample();
             // MutexExample2();
-           // SharedMutex();
-
+            // SharedMutex();
+            ReaderWriterLock();
 
 
         }
