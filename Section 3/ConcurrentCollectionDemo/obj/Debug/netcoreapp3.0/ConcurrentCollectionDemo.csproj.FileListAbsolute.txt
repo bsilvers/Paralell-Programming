@@ -1,0 +1,10 @@
+C:\work\github\Parallel Programming\Section 3\ConcurrentCollectionDemo\bin\Debug\netcoreapp3.0\ConcurrentCollectionDemo.exe
+C:\work\github\Parallel Programming\Section 3\ConcurrentCollectionDemo\bin\Debug\netcoreapp3.0\ConcurrentCollectionDemo.deps.json
+C:\work\github\Parallel Programming\Section 3\ConcurrentCollectionDemo\bin\Debug\netcoreapp3.0\ConcurrentCollectionDemo.runtimeconfig.json
+C:\work\github\Parallel Programming\Section 3\ConcurrentCollectionDemo\bin\Debug\netcoreapp3.0\ConcurrentCollectionDemo.runtimeconfig.dev.json
+C:\work\github\Parallel Programming\Section 3\ConcurrentCollectionDemo\bin\Debug\netcoreapp3.0\ConcurrentCollectionDemo.dll
+C:\work\github\Parallel Programming\Section 3\ConcurrentCollectionDemo\bin\Debug\netcoreapp3.0\ConcurrentCollectionDemo.pdb
+C:\work\github\Parallel Programming\Section 3\ConcurrentCollectionDemo\obj\Debug\netcoreapp3.0\ConcurrentCollectionDemo.AssemblyInfoInputs.cache
+C:\work\github\Parallel Programming\Section 3\ConcurrentCollectionDemo\obj\Debug\netcoreapp3.0\ConcurrentCollectionDemo.AssemblyInfo.cs
+C:\work\github\Parallel Programming\Section 3\ConcurrentCollectionDemo\obj\Debug\netcoreapp3.0\ConcurrentCollectionDemo.dll
+C:\work\github\Parallel Programming\Section 3\ConcurrentCollectionDemo\obj\Debug\netcoreapp3.0\ConcurrentCollectionDemo.pdb
