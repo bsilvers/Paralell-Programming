@@ -41,9 +41,9 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
-            "BenchmarkDotNet.Core": {
+            "BenchmarkDotNet": {
               "target": "Package",
-              "version": "[0.10.14, )"
+              "version": "[0.11.5, )"
             }
           },
           "imports": [

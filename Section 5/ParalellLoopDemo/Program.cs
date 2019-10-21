@@ -10,7 +10,7 @@ using BenchmarkDotNet.Running;
 
 namespace ParallelLoopDemo
 {
-    class Program
+    public class Program
     {
         static IEnumerable<int> Range(int start, int end, int step)
         {
@@ -20,6 +20,7 @@ namespace ParallelLoopDemo
             }
         }
 
+        #region Parallel Invoke/For/ForEach
         static void ParallelLoopDemo()
         {
             var a = new Action(() => Console.WriteLine($"First {Task.CurrentId}"));
@@ -28,12 +29,14 @@ namespace ParallelLoopDemo
 
             Parallel.Invoke(a, b, c);
 
-            Parallel.For(1, 11, i => {
+            Parallel.For(1, 11, i =>
+            {
                 Console.WriteLine($"{i * i}\t");
             });
 
             string[] words = { "oh", "what", "a", "night" };
-            Parallel.ForEach(words, word => {
+            Parallel.ForEach(words, word =>
+            {
                 Console.WriteLine($"{word} has length {word.Length} (task {Task.CurrentId})");
             });
         }
@@ -49,13 +52,18 @@ namespace ParallelLoopDemo
             var po = new ParallelOptions();
             //po.MaxDegreeOfParallelism
 
-            Parallel.For(1, 11, i => {
-               // Console.WriteLine($"{i * i}\t");
+            Parallel.For(1, 11, i =>
+            {
+                // Console.WriteLine($"{i * i}\t");
             });
 
             Parallel.ForEach(Range(1, 20, 3), Console.WriteLine);
-        }
+        } 
+        #endregion
+
         static ParallelLoopResult result;
+        
+        #region Breaking, Cancellations and Exceptions
         static void BreakCancelException()
         {
             var cts = new CancellationTokenSource();
@@ -63,9 +71,10 @@ namespace ParallelLoopDemo
             ParallelOptions po = new ParallelOptions();
             po.CancellationToken = cts.Token;
 
-            result = Parallel.For(0, 20, (int x, ParallelLoopState state) => {
+            result = Parallel.For(0, 20, (int x, ParallelLoopState state) =>
+            {
                 Console.WriteLine($"{x}[{Task.CurrentId}]\t");
-                if( x == 10)
+                if (x == 10)
                 {
                     //throw new Exception();
                     //state.Stop();
@@ -78,35 +87,57 @@ namespace ParallelLoopDemo
             Console.WriteLine($"Was loop completed? {result.IsCompleted}");
             if (result.LowestBreakIteration.HasValue)
                 Console.WriteLine($"Lowest break iteration is {result.LowestBreakIteration}");
-        }
+        } 
+        #endregion
 
+        #region Thread Local Storage
         static void ThreadLocalStorageDemo()
         {
             int sum = 0;
 
-            Parallel.For(1, 1001, 
+            Parallel.For(1, 1001,
                 () => 0,
-                (x, state, tls) => {
-                tls += x;
+                (x, state, tls) =>
+                {
+                    tls += x;
                     Console.WriteLine($"Task {Task.CurrentId} has sum {tls}");
                     return tls;
-            }, 
+                },
             partialSum =>
             {
                 Console.WriteLine($"Partial value of task {Task.CurrentId} is {partialSum}");
                 Interlocked.Add(ref sum, partialSum);
             });
             Console.WriteLine($"Sum of 1..100 = {sum}");
-        }
+        } 
+        #endregion
+               
+        #region Partitioning
         [Benchmark]
-        static void SquareEachValue()
+        public void SquareEachValue()
         {
             const int count = 100000;
             var values = Enumerable.Range(0, count);
             var results = new int[count];
             // very inneficient way of doing it.
-            Parallel.ForEach(values, x => { results[x] = (int) Math.Pow(x, 2); });
+            Parallel.ForEach(values, x => { results[x] = (int)Math.Pow(x, 2); });
+        } 
+        [Benchmark]
+        public void SquareEachValueChunked()
+        {
+            const int count = 10000;
+            var values = Enumerable.Range(0, count);
+            var results = new int[count];
+            var part = Partitioner.Create(0, count, 10000);
+            Parallel.ForEach(part, range =>
+            {
+                for (int i = range.Item1; i < range.Item2; i++)
+                {
+                    results[i] = (int)Math.Pow(i, 2);
+                }
+            });
         }
+        #endregion
 
         static void Main(string[] args)
         {
@@ -116,7 +147,7 @@ namespace ParallelLoopDemo
                 // ParallelForEachDemo();
                 //BreakCancelException();
                 //ThreadLocalStorageDemo();
-                var summary = BenchmarkRunnerCore.Run<Program>();
+                var summary =  BenchmarkRunner.Run<Program>();
                 Console.WriteLine(summary);
             }
             catch (AggregateException ae)
