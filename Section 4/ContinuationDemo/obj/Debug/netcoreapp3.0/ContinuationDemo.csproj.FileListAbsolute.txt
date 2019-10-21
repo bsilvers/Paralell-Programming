@@ -1,0 +1,10 @@
+C:\work\github\Parallel Programming\Section 4\ContinuationDemo\bin\Debug\netcoreapp3.0\ContinuationDemo.exe
+C:\work\github\Parallel Programming\Section 4\ContinuationDemo\bin\Debug\netcoreapp3.0\ContinuationDemo.deps.json
+C:\work\github\Parallel Programming\Section 4\ContinuationDemo\bin\Debug\netcoreapp3.0\ContinuationDemo.runtimeconfig.json
+C:\work\github\Parallel Programming\Section 4\ContinuationDemo\bin\Debug\netcoreapp3.0\ContinuationDemo.runtimeconfig.dev.json
+C:\work\github\Parallel Programming\Section 4\ContinuationDemo\bin\Debug\netcoreapp3.0\ContinuationDemo.dll
+C:\work\github\Parallel Programming\Section 4\ContinuationDemo\bin\Debug\netcoreapp3.0\ContinuationDemo.pdb
+C:\work\github\Parallel Programming\Section 4\ContinuationDemo\obj\Debug\netcoreapp3.0\ContinuationDemo.AssemblyInfoInputs.cache
+C:\work\github\Parallel Programming\Section 4\ContinuationDemo\obj\Debug\netcoreapp3.0\ContinuationDemo.AssemblyInfo.cs
+C:\work\github\Parallel Programming\Section 4\ContinuationDemo\obj\Debug\netcoreapp3.0\ContinuationDemo.dll
+C:\work\github\Parallel Programming\Section 4\ContinuationDemo\obj\Debug\netcoreapp3.0\ContinuationDemo.pdb

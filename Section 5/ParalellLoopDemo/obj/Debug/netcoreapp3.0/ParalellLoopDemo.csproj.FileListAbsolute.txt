@@ -1,0 +1,11 @@
+C:\work\github\Parallel Programming\Section 5\ParalellLoopDemo\bin\Debug\netcoreapp3.0\ParalellLoopDemo.exe
+C:\work\github\Parallel Programming\Section 5\ParalellLoopDemo\bin\Debug\netcoreapp3.0\ParalellLoopDemo.deps.json
+C:\work\github\Parallel Programming\Section 5\ParalellLoopDemo\bin\Debug\netcoreapp3.0\ParalellLoopDemo.runtimeconfig.json
+C:\work\github\Parallel Programming\Section 5\ParalellLoopDemo\bin\Debug\netcoreapp3.0\ParalellLoopDemo.runtimeconfig.dev.json
+C:\work\github\Parallel Programming\Section 5\ParalellLoopDemo\bin\Debug\netcoreapp3.0\ParalellLoopDemo.dll
+C:\work\github\Parallel Programming\Section 5\ParalellLoopDemo\bin\Debug\netcoreapp3.0\ParalellLoopDemo.pdb
+C:\work\github\Parallel Programming\Section 5\ParalellLoopDemo\obj\Debug\netcoreapp3.0\ParalellLoopDemo.csprojAssemblyReference.cache
+C:\work\github\Parallel Programming\Section 5\ParalellLoopDemo\obj\Debug\netcoreapp3.0\ParalellLoopDemo.AssemblyInfoInputs.cache
+C:\work\github\Parallel Programming\Section 5\ParalellLoopDemo\obj\Debug\netcoreapp3.0\ParalellLoopDemo.AssemblyInfo.cs
+C:\work\github\Parallel Programming\Section 5\ParalellLoopDemo\obj\Debug\netcoreapp3.0\ParalellLoopDemo.dll
+C:\work\github\Parallel Programming\Section 5\ParalellLoopDemo\obj\Debug\netcoreapp3.0\ParalellLoopDemo.pdb
