@@ -1,0 +1,9 @@
+C:\work\github\Parallel Programming\Section 7\WindowsFormsAsyncApp2\bin\Debug\WindowsFormsAsyncApp2.exe.config
+C:\work\github\Parallel Programming\Section 7\WindowsFormsAsyncApp2\bin\Debug\WindowsFormsAsyncApp2.exe
+C:\work\github\Parallel Programming\Section 7\WindowsFormsAsyncApp2\bin\Debug\WindowsFormsAsyncApp2.pdb
+C:\work\github\Parallel Programming\Section 7\WindowsFormsAsyncApp2\obj\Debug\WindowsFormsAsyncApp2.csprojAssemblyReference.cache
+C:\work\github\Parallel Programming\Section 7\WindowsFormsAsyncApp2\obj\Debug\WindowsFormsAsyncApp2.Form1.resources
+C:\work\github\Parallel Programming\Section 7\WindowsFormsAsyncApp2\obj\Debug\WindowsFormsAsyncApp2.Properties.Resources.resources
+C:\work\github\Parallel Programming\Section 7\WindowsFormsAsyncApp2\obj\Debug\WindowsFormsAsyncApp2.csproj.GenerateResource.cache
+C:\work\github\Parallel Programming\Section 7\WindowsFormsAsyncApp2\obj\Debug\WindowsFormsAsyncApp2.exe
+C:\work\github\Parallel Programming\Section 7\WindowsFormsAsyncApp2\obj\Debug\WindowsFormsAsyncApp2.pdb

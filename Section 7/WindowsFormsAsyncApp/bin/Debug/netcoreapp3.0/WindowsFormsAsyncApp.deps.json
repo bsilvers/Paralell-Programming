@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "WindowsFormsAsyncApp/1.0.0": {
+        "runtime": {
+          "WindowsFormsAsyncApp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WindowsFormsAsyncApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
